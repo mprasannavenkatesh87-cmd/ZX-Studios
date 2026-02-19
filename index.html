@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ZX Studios | India's First Young IT Company</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#000;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+#particles-js{
+    position:fixed;
+    width:100%;
+    height:100%;
+    z-index:-1;
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:rgba(0,0,0,0.85);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid #111;
+}
+
+.logo img{
+    height:55px;
+    filter:drop-shadow(0 0 8px #00aaff);
+}
+
+nav a{
+    color:#fff;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#00aaff;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:120px 20px;
+}
+
+.hero h1{
+    font-size:52px;
+    color:#00aaff;
+}
+
+.hero h2{
+    margin-top:15px;
+    font-size:22px;
+    font-weight:400;
+}
+
+.hero p{
+    margin-top:25px;
+    font-size:18px;
+    color:#ccc;
+    max-width:700px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+/* SECTION */
+.section{
+    padding:80px 8%;
+}
+
+.section h2{
+    text-align:center;
+    font-size:36px;
+    margin-bottom:40px;
+    color:#00aaff;
+}
+
+/* TEAM */
+.about-content{
+    display:flex;
+    justify-content:center;
+    gap:80px;
+    flex-wrap:wrap;
+    margin-bottom:50px;
+}
+
+.team-card{
+    text-align:center;
+    max-width:300px;
+}
+
+.team-card img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:4px solid #00aaff;
+    margin-bottom:20px;
+    transition:0.3s;
+}
+
+.team-card img:hover{
+    transform:scale(1.05);
+}
+
+.team-card h3{
+    font-size:22px;
+}
+
+.team-card p{
+    color:#00aaff;
+    font-weight:500;
+}
+
+.team-card .desc{
+    color:#ccc;
+    font-weight:300;
+    margin-top:10px;
+    font-size:14px;
+}
+
+/* SCHOOL INFO */
+.school-info{
+    max-width:800px;
+    margin:0 auto;
+    text-align:center;
+    color:#ccc;
+    line-height:1.8;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:30px;
+    background:rgba(0,0,0,0.85);
+    border-top:1px solid #111;
+    color:#888;
+    margin-top:50px;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:34px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div id="particles-js"></div>
+
+<header>
+    <div class="logo">
+        <!-- Company Logo -->
+        <img src="logo.png" alt="ZX Studios Logo">
+    </div>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>ZX Studios</h1>
+    <h2>India's First Young IT Company</h2>
+    <p>
+        A next-generation technology startup founded by young innovators 
+        building intelligent, scalable and future-ready digital solutions.
+    </p>
+</section>
+
+<section class="section" id="about">
+    <h2>Leadership Team</h2>
+
+    <div class="about-content">
+
+        <div class="team-card">
+            <img src="prasanna.png" alt="Prasanna Venkatesh">
+            <h3>Prasanna Venkatesh</h3>
+            <p>CEO & Full Stack Developer – ZX Studios</p>
+            <div class="desc">
+                Emerging young technology leader driving innovation, 
+                strategy and digital transformation at ZX Studios.
+            </div>
+        </div>
+
+        <div class="team-card">
+            <img src="rogith.png" alt="Rogith">
+            <h3>Rogith</h3>
+            <p>Chief Collaborative Officer (CCO) & Vice CEO</p>
+            <div class="desc">
+                Leading collaboration, operational growth and strategic 
+                partnerships to expand ZX Studios' vision.
+            </div>
+        </div>
+
+    </div>
+
+    <div class="school-info">
+        <h3 style="color:#00aaff;margin-bottom:15px;">Educational Background</h3>
+        <p>
+            The founders of ZX Studios is currently pursuing education at 
+            <strong>Sairam Matric Higher Secondary School</strong>, 
+            Thiruthuraipoondi, Thiruvarur District, 
+            State: Tamil Nadu, Country: INDIA.  
+            Alongside academic excellence, the journey of building ZX Studios 
+            represents dedication, innovation and entrepreneurial ambition at a young age.
+        </p>
+    </div>
+</section>
+
+<section class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;color:#ccc;">
+        Email: contact@zxstudios.com <br>
+        Location: Tamil Nadu, INDIA
+    </p>
+</section>
+
+<footer>
+    © 2026 ZX Studios. All Rights Reserved.
+</footer>
+
+<script>
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 80 },
+    color: { value: "#00aaff" },
+    shape: { type: "circle" },
+    opacity: { value: 0.5 },
+    size: { value: 3 },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: "#00aaff",
+      opacity: 0.4,
+      width: 1
+    },
+    move: {
+      enable: true,
+      speed: 3
+    }
+  },
+  interactivity: {
+    events: {
+      onhover: {
+        enable: true,
+        mode: "repulse"
+      }
+    }
+  },
+  retina_detect: true
+});
+</script>
+
+</body>
+</html>
